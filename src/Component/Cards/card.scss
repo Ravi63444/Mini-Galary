@@ -1,0 +1,43 @@
+.cardParent {
+  flex-grow: 1;
+  margin: 5px 5px;
+  .imageClass {
+    height: 150px;
+    width: 245px;
+  }
+  .zoomImageClass{
+    
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+   
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 70%; 
+    height: 70%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  .closeClass{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .likeParent {
+    display: flex;
+    justify-content: space-between;
+    .likeStatus {
+      cursor: pointer;
+    }
+  }
+  .commentParent {
+    height: 70px;
+    overflow-y: auto;
+  }
+}

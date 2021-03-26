@@ -1,0 +1,35 @@
+.parent {
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 50px;
+  width: 70%;
+  height: 580px;
+  overflow-y: auto;
+  .header {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    background-color: aliceblue;
+    color: royalblue;
+  }
+  .menubar {
+    display: flex;
+    padding: 5px 10px;
+    .clickClass {
+      cursor: pointer;
+      flex-grow: 1;
+      text-decoration: underline;
+    }
+    .selectedClass{
+      color:lightgreen;
+      cursor: pointer;
+      flex-grow: 1;
+      text-decoration: underline;
+    }
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+  }
+}
